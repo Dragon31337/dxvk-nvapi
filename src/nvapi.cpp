@@ -89,20 +89,18 @@ extern "C" {
         return Error(__func__);
     }
 
-    NvAPI_Status __cdecl NvAPI_InitInterfaceEx(NvAPI_Status nr, NvAPI_ShortString szDesc) {
+    NvAPI_Status __cdecl NvAPI_Unload() {
         return Error(__func__);
     }
 
-
-    NvAPI_Status __cdecl NvAPI_Unload() {
-        constexpr auto n = __func__;
-
-        return ApiNotInitialized(n);
-    }
 
     NvAPI_Status __cdecl NvAPI_Initialize() {
         constexpr auto n = __func__;
 
         return NoLib(n);
+    }
+
+    NvAPI_Status __cdecl NvAPI_InitInterfaceEx(NvAPI_Status nr, NvAPI_ShortString szDesc) {
+        return Error(__func__);
     }
 }

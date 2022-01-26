@@ -33,12 +33,6 @@ extern "C" {
         return Error(__func__);
     }
 
-    NvAPI_Status __cdecl NvAPI_D3D1x_GetGraphicsCapabilities(IUnknown *pDevice,
-                                                    NvU32 structVersion,
-                                                    NV_D3D1x_GRAPHICS_CAPS *pGraphicsCaps) {
-        return Error(__func__);
-    }
-
     NvAPI_Status __cdecl NvAPI_D3D_Sleep(IUnknown *pDevice) {
         return Error(__func__);
     }
