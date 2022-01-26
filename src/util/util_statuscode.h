@@ -8,6 +8,10 @@ namespace dxvk {
         return NVAPI_OK;
     }
 
+    inline NvAPI_Status NoLib() {
+        return NVAPI_LIBRARY_NOT_FOUND;
+    }
+
     inline NvAPI_Status Ok(const std::string& logMessage) {
         log::write(str::format(logMessage, ": OK"));
         return NVAPI_OK;
