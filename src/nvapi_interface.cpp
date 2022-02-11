@@ -108,6 +108,7 @@ extern "C" {
         INSERT_AND_RETURN_WHEN_EQUALS(NvAPI_GetErrorMessage)
         INSERT_AND_RETURN_WHEN_EQUALS(NvAPI_Unload)
         INSERT_AND_RETURN_WHEN_EQUALS(NvAPI_Initialize)
+        INSERT_AND_RETURN_WHEN_EQUALS(NvAPI_InitInterfaceEx)
         /* End */
 
         log::write(str::format("NvAPI_QueryInterface ", it->func, ": Not implemented method"));

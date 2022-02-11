@@ -29,6 +29,7 @@ struct NVAPI_INTERFACE_TABLE { const char * func; unsigned int id; };
 struct NVAPI_INTERFACE_TABLE nvapi_interface_table[] =
 {
     { "NvAPI_Initialize", 0x0150e828 },
+    { "NvAPI_InitInterfaceEx", 0xad298d3f },
     { "NvAPI_Unload", 0xd22bdd7e },
     { "NvAPI_GetErrorMessage", 0x6c2d048c },
     { "NvAPI_GetInterfaceVersionString", 0x01053fa5 },
