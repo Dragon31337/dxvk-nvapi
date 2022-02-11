@@ -63,7 +63,6 @@ extern "C" {
     }
 
     NvAPI_Status __cdecl NvAPI_GPU_GetAllClockFrequencies(NvPhysicalGpuHandle hPhysicalGpu, NV_GPU_CLOCK_FREQUENCIES *pClkFreqs) {
-
         return Error(__func__);
     }
 }
